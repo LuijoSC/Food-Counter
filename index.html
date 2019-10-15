@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DiamondCollector Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+<body>
+<div class="container">
+        <div class="jumbotron jumbotron-fluid" style="background-color: teal; color: white">
+                <div class="container">
+                  <h1 class="text-center">Forbidden Food Counter</h1>
+                </div>
+              </div>
+        
+            <div class= "row">
+                <div class="col-lg-12">
+                        <div class="card border-info mb-3">
+                                <div class="p-2 mb-1 bg-info text-white">
+                                  <h3 class="card-title, text-center">Instructions</h3>
+                                </div>
+                                <div class="card-body, text-center">
+                                        Your score will begin on 200. 
+                                        You will click each meal you got and will get a random number of points subtracted from the start score. 
+                                        If you manage to overcome the score, you will get a “Looser” alert.
+                                        <br> Green diamond = chips
+                                        Red diamond = coffee
+                                        Blue diamond = cigar
+                                        Brown diamond = beer </br>
+                                </div>
+                              </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 2rem">
+                    <div class="col-lg-6">
+                            <div class="card border-dark mb-3">
+                                    <div class="p-2 mb-1 bg-secondary text-white">
+                                      <h3 class="card-title, text-center">Score so far</h3>
+                                    </div>
+                                    <div class="card-body, text-center" style= "font-size: 2rem" id="scoreSoFar">  
+                                      0
+                                    </div>
+                                  </div>
+            </div>
+            <div class="col-lg-6">
+                    <div class="card border-dark mb-3">
+                            <div class="p-2 mb-1 bg-secondary text-white">
+                              <h3 class="card-title, text-center">Points you've lost</h3>
+                            </div>
+                            <div class="card-body, text-center" style= "font-size: 2rem" id="lostPoints">
+                              0
+                            </div>
+                          </div>
+            </div>
+            </div>
+
+            <div class="row" style="margin-top: 2rem">
+                    <!-- <div class="col-lg-3">
+                            <div class="card border-success mb-3">
+                                    <div class="p-2 mb-1 bg-success text-white">
+                                      <h3 class="card-title, text-center">Wins</h3>
+                                    </div>
+                                    <div class="card-body, text-center" style= "font-size: 2rem" id="wins">
+                                      0
+                                    </div>
+                                  </div>
+            </div>
+            <div class="col-lg-3">
+                    <div class="card border-danger mb-3">
+                            <div class="p-2 mb-1 bg-danger text-white">
+                              <h3 class="card-title, text-center">Loses</h3>
+                            </div>
+                            <div class="card-body, text-center" style= "font-size: 2rem" id="loses">
+                              0
+                            </div>
+                          </div>
+            </div> -->
+            <div class="col-lg-12">
+                    <div class="card border-warning mb-3">
+                            <div class="p-2 mb-1 bg-warning text-white">
+                              <h3 class="card-title, text-center">Food</h3>
+                            </div>
+                            <div class="card-body, text-center">
+                              <div id="chips" style="display:inline-block" class="food">
+                                  <img src="assets/images/green.png" style="width: 50%" alt="Green Diamond">
+                              </div>
+                              <div id="coffee" style="display:inline-block" class="food">
+                                  <img src="assets/images/red.png" style="width: 50%" alt="Red Diamond">
+                              </div>
+                              <div id="cigar" style="display:inline-block" class="food">
+                                  <img src="assets/images/blue.png" style="width: 50%" alt="Blue Diamond">
+                              </div>              
+                              <div id="beer" style="display:inline-block" class="food">
+                                  <img src="assets/images/brown.png" style="width: 50%" alt="Brown Diamond">
+                              </div>
+                            </div>
+                          </div>
+            </div>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="assets/javascript/game.js"></script>
+</body>
+</html>
